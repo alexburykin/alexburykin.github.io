@@ -1,0 +1,28 @@
+.font-poppins {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.font-jost {
+  font-family: 'Jost', sans-serif;
+}
+
+.font-freehand {
+  font-family: "Freehand", cursive;
+}
+
+.container {
+  padding: 0 4rem !important;
+  margin: 0 auto !important;
+}
+
+.rounded-xl {
+  border-radius: 16px;
+}
+
+.offering {
+  padding: 2rem 3rem 3rem;
+}
+
+.offering p {
+  font-family: 'Jost', sans-serif;
+}
