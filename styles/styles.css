@@ -26,3 +26,13 @@
 .offering p {
   font-family: 'Jost', sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 2rem !important;
+  }
+
+  .offering {
+    padding: 2rem 1.5rem 3rem;
+  }
+}

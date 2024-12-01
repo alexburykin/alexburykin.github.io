@@ -18,6 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(response => response.text())
     .then(data => {
       document.getElementById('top-nav').innerHTML = data;
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
     });
 
   // Load the navigation
@@ -28,14 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
       const enableDarkMode = document.getElementById('set-dark-mode');
       const enableLightMode = document.getElementById('set-light-mode');
       const htmlElement = document.documentElement;
-      const popup = document.getElementById('popup');
+      // const popup = document.getElementById('popup');
 
-      if (!localStorage.getItem('theme')) {
-        setTimeout(() => {
-          popup.classList.add('show');
-          popup.style.bottom = '20px';
-        }, 2000);
-      }
+      // if (!localStorage.getItem('theme')) {
+      //   setTimeout(() => {
+      //     popup.classList.add('show');
+      //     popup.style.bottom = '20px';
+      //   }, 2000);
+      // }
 
       enableDarkMode.addEventListener('click', () => {
         htmlElement.classList.add('dark');
